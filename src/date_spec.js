@@ -25,6 +25,6 @@ describe('mercuryAgeCalc', function() {
 
     let testAge = 44;
 
-    expect(mercuryAgeCalc(testAge)).toEqual(135302400);
-  }); 
+    expect(mercuryAgeCalc(testAge)).toEqual(183);
+  });
 });

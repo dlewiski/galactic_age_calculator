@@ -11,6 +11,6 @@ export function dateSpan(earlierDate, laterDate) {
 }
 
 export function mercuryAgeCalc(years) {
-  let mercuryAge = years  ;
+  let mercuryAge = Math.round(years / 0.24);
   return mercuryAge;
 }
