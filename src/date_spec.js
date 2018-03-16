@@ -1,12 +1,11 @@
-import { yearsToSeconds } from './date.js';
+import { AgeCalc } from './date.js';
 import { dateSpan } from './date.js';
-import { mercuryAgeCalc } from './date.js';
 
 describe('yearsToSeconds', function() {
   it('Take a person’s age in years and convert it into seconds', function(){
-    let testAge = 44;
+    let testAge = new AgeCalc(44);
 
-    expect(yearsToSeconds(testAge)).toEqual(1387584000);
+    expect(testAge.yearsToSeconds()).toEqual(1387584000);
   });
 });
 
@@ -23,8 +22,17 @@ describe('dateSpan', function() {
 describe('mercuryAgeCalc', function() {
   it('Return the age of a human in Mercury years.', function(){
 
-    let testAge = 44;
+    let testAge = new AgeCalc(44);
 
-    expect(mercuryAgeCalc(testAge)).toEqual(183);
+    expect(testAge.mercuryAgeCalc()).toEqual(183);
+  });
+});
+
+describe('venusAgeCalc', function() {
+  it('Return the age of a human in Mercury years.', function(){
+
+    let testAge = new AgeCalc(44);
+
+    expect(testAge.venusAgeCalc()).toEqual(71);
   });
 });
