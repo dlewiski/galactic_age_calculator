@@ -57,8 +57,29 @@ export class AgeCalc {
   }
 
   yearsPastExpectationMerc(lifeExpectancy) {
-    const jupiterLife = Math.round(lifeExpectancy / 0.24);
-    let jupiterAge = Math.round(this.age / 0.24);
+    const mercLife = Math.round(lifeExpectancy / 0.24);
+    let mercAge = Math.round(this.age / 0.24);
+    let yearsPast = mercAge - mercLife;
+    return yearsPast;
+  }
+
+  yearsPastExpectationVenus(lifeExpectancy) {
+    const venusLife = Math.round(lifeExpectancy / 0.62);
+    let venusAge = Math.round(this.age / 0.62);
+    let yearsPast = venusAge - venusLife;
+    return yearsPast;
+  }
+
+  yearsPastExpectationMars(lifeExpectancy) {
+    const marsLife = Math.round(lifeExpectancy / 1.88);
+    let marsAge = Math.round(this.age / 1.88);
+    let yearsPast = marsAge - marsLife;
+    return yearsPast;
+  }
+
+  yearsPastExpectationJupiter(lifeExpectancy) {
+    const jupiterLife = Math.round(lifeExpectancy / 11.86);
+    let jupiterAge = Math.round(this.age / 11.86);
     let yearsPast = jupiterAge - jupiterLife;
     return yearsPast;
   }

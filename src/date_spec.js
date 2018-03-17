@@ -128,7 +128,7 @@ describe('yearsPastExpectationMars', function() {
 describe('yearsPastExpectationJupiter', function() {
   it('should determine if a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy on Mercury', function(){
 
-    let testAge = new AgeCalc(88);
+    let testAge = new AgeCalc(95);
     const lifeExpectancy = 80;
 
     expect(testAge.yearsPastExpectationJupiter(lifeExpectancy)).toEqual(1);
