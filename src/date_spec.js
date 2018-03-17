@@ -29,10 +29,28 @@ describe('mercuryAgeCalc', function() {
 });
 
 describe('venusAgeCalc', function() {
-  it('Return the age of a human in Mercury years.', function(){
+  it('Return the age of a human in Venus years.', function(){
 
     let testAge = new AgeCalc(44);
 
     expect(testAge.venusAgeCalc()).toEqual(71);
+  });
+});
+
+describe('marsAgeCalc', function() {
+  it('Return the age of a human in Mars years.', function(){
+
+    let testAge = new AgeCalc(44);
+
+    expect(testAge.marsAgeCalc()).toEqual(23);
+  });
+});
+
+describe('jupiterAgeCalc', function() {
+  it('Return the age of a human in Jupiter years.', function(){
+
+    let testAge = new AgeCalc(44);
+
+    expect(testAge.jupiterAgeCalc()).toEqual(4);
   });
 });
