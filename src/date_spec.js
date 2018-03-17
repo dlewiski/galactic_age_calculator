@@ -64,3 +64,33 @@ describe('yearsLeftMerc', function() {
     expect(testAge.yearsLeftMerc(lifeExpectancy)).toEqual(150);
   });
 });
+
+describe('yearsLeftVenus', function() {
+  it('should determine how many years a user has left to live on Venus', function(){
+
+    let testAge = new AgeCalc(44);
+    const lifeExpectancy = 80;
+
+    expect(testAge.yearsLeftVenus(lifeExpectancy)).toEqual(150);
+  });
+});
+
+describe('yearsLeftMars', function() {
+  it('should determine how many years a user has left to live on Mars', function(){
+
+    let testAge = new AgeCalc(44);
+    const lifeExpectancy = 80;
+
+    expect(testAge.yearsLeftMars(lifeExpectancy)).toEqual(150);
+  });
+});
+
+describe('yearsLeftJupiter', function() {
+  it('should determine how many years a user has left to live on Jupiter', function(){
+
+    let testAge = new AgeCalc(44);
+    const lifeExpectancy = 80;
+
+    expect(testAge.yearsLeftJupiter(lifeExpectancy)).toEqual(150);
+  });
+});
