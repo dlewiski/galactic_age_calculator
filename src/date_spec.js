@@ -71,7 +71,7 @@ describe('yearsLeftVenus', function() {
     let testAge = new AgeCalc(44);
     const lifeExpectancy = 80;
 
-    expect(testAge.yearsLeftVenus(lifeExpectancy)).toEqual(150);
+    expect(testAge.yearsLeftVenus(lifeExpectancy)).toEqual(58);
   });
 });
 
@@ -81,7 +81,7 @@ describe('yearsLeftMars', function() {
     let testAge = new AgeCalc(44);
     const lifeExpectancy = 80;
 
-    expect(testAge.yearsLeftMars(lifeExpectancy)).toEqual(150);
+    expect(testAge.yearsLeftMars(lifeExpectancy)).toEqual(20);
   });
 });
 
@@ -91,6 +91,25 @@ describe('yearsLeftJupiter', function() {
     let testAge = new AgeCalc(44);
     const lifeExpectancy = 80;
 
-    expect(testAge.yearsLeftJupiter(lifeExpectancy)).toEqual(150);
+    expect(testAge.yearsLeftJupiter(lifeExpectancy)).toEqual(3);
   });
 });
+
+describe('yearsPastExpectationMerc', function() {
+  it('should determine if a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy on Mercury', function(){
+
+    let testAge = new AgeCalc(88);
+    const lifeExpectancy = 80;
+
+    expect(testAge.yearsPastExpectationMerc(lifeExpectancy)).toEqual(33);
+  });
+});
+
+
+
+
+
+
+
+
+If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy on Mercury
