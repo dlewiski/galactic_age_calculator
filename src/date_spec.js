@@ -2,7 +2,7 @@ import { AgeCalc } from './date.js';
 import { dateSpan } from './date.js';
 
 describe('yearsToSeconds', function() {
-  it('Take a person’s age in years and convert it into seconds', function(){
+  it('should take a person’s age in years and convert it into seconds', function(){
     let testAge = new AgeCalc(44);
 
     expect(testAge.yearsToSeconds()).toEqual(1387584000);
@@ -10,7 +10,7 @@ describe('yearsToSeconds', function() {
 });
 
 describe('dateSpan', function() {
-  it('Take two dates and determine the difference, in seconds, between the two.', function(){
+  it('should take two dates and determine the difference, in seconds, between the two.', function(){
 
     const testDate = new Date(1989, 2, 9);
     const earlierDate = new Date(1984, 10, 24);
@@ -20,7 +20,7 @@ describe('dateSpan', function() {
 });
 
 describe('mercuryAgeCalc', function() {
-  it('Return the age of a human in Mercury years.', function(){
+  it('should return the age of a human in Mercury years.', function(){
 
     let testAge = new AgeCalc(44);
 
@@ -29,7 +29,7 @@ describe('mercuryAgeCalc', function() {
 });
 
 describe('venusAgeCalc', function() {
-  it('Return the age of a human in Venus years.', function(){
+  it('should return the age of a human in Venus years.', function(){
 
     let testAge = new AgeCalc(44);
 
@@ -38,7 +38,7 @@ describe('venusAgeCalc', function() {
 });
 
 describe('marsAgeCalc', function() {
-  it('Return the age of a human in Mars years.', function(){
+  it('should return the age of a human in Mars years.', function(){
 
     let testAge = new AgeCalc(44);
 
@@ -47,10 +47,20 @@ describe('marsAgeCalc', function() {
 });
 
 describe('jupiterAgeCalc', function() {
-  it('Return the age of a human in Jupiter years.', function(){
+  it('should return the age of a human in Jupiter years.', function(){
 
     let testAge = new AgeCalc(44);
 
     expect(testAge.jupiterAgeCalc()).toEqual(4);
+  });
+});
+
+describe('yearsLeftMerc', function() {
+  it('should determine how many years a user has left to live on Mercury', function(){
+
+    let testAge = new AgeCalc(44);
+    const lifeExpectancy = 80;
+
+    expect(testAge.yearsLeftMerc(lifeExpectancy)).toEqual(150);
   });
 });
