@@ -104,3 +104,33 @@ describe('yearsPastExpectationMerc', function() {
     expect(testAge.yearsPastExpectationMerc(lifeExpectancy)).toEqual(34);
   });
 });
+
+describe('yearsPastExpectationVenus', function() {
+  it('should determine if a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy on Mercury', function(){
+
+    let testAge = new AgeCalc(88);
+    const lifeExpectancy = 80;
+
+    expect(testAge.yearsPastExpectationVenus(lifeExpectancy)).toEqual(13);
+  });
+});
+
+describe('yearsPastExpectationMars', function() {
+  it('should determine if a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy on Mercury', function(){
+
+    let testAge = new AgeCalc(88);
+    const lifeExpectancy = 80;
+
+    expect(testAge.yearsPastExpectationMars(lifeExpectancy)).toEqual(4);
+  });
+});
+
+describe('yearsPastExpectationJupiter', function() {
+  it('should determine if a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy on Mercury', function(){
+
+    let testAge = new AgeCalc(88);
+    const lifeExpectancy = 80;
+
+    expect(testAge.yearsPastExpectationJupiter(lifeExpectancy)).toEqual(1);
+  });
+});
