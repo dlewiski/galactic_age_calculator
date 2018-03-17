@@ -8,8 +8,8 @@
 2. Specs
 
   * Spec 1: Description: Take a person’s age in years and convert it into seconds.
-            Input example: "44"
-            OutPut example: 1,388,000,000 or 1.388e+9
+            * Input example: "44"
+            * OutPut example: 1,388,000,000 or 1.388e+9
 
   * Spec 2: Description: Take two dates and determine the difference, in seconds, between the two.
             Input example: "2/25/2014" "5/11/2017"
