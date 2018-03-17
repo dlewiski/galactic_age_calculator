@@ -17,6 +17,16 @@ export class AgeCalc {
     let venusAge = Math.round(this.age / 0.62);
     return venusAge;
   }
+
+  marsAgeCalc() {
+    let marsAge = Math.round(this.age / 1.88);
+    return marsAge;
+  }
+
+  jupiterAgeCalc() {
+    let jupiterAge = Math.round(this.age / 11.86);
+    return jupiterAge;
+  }
 }
 
 
