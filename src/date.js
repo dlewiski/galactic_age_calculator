@@ -28,9 +28,11 @@ export class AgeCalc {
     return jupiterAge;
   }
 
-  jupiterAgeCalc() {
-    let jupiterAge = Math.round(this.age / 11.86);
-    return jupiterAge;
+  yearsLeftMerc(lifeExpectancy) {
+    const mercLife = Math.round(lifeExpectancy / 0.24);
+    let mercuryAge = Math.round(this.age / 0.24);
+    let yearsLeft = mercLife - mercuryAge;
+    return yearsLeft;
   }
 }
 
