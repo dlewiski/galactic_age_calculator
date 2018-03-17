@@ -101,15 +101,6 @@ describe('yearsPastExpectationMerc', function() {
     let testAge = new AgeCalc(88);
     const lifeExpectancy = 80;
 
-    expect(testAge.yearsPastExpectationMerc(lifeExpectancy)).toEqual(33);
+    expect(testAge.yearsPastExpectationMerc(lifeExpectancy)).toEqual(34);
   });
 });
-
-
-
-
-
-
-
-
-If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy on Mercury
